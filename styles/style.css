@@ -1,0 +1,20 @@
+p, li, h2 {
+  color: red;
+  text-align: center;
+}
+h1 {
+	margin: 0;
+	font-size: 60px;
+	text-align: center;
+	border: 5px solid black;
+}
+a:hover {
+	color: green;
+}
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
