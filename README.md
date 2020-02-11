@@ -1,2 +1,1 @@
-# test-proj0
-Test project
+Test project - learning HTML & CSS
