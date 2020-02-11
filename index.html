@@ -1,97 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<link href="styles/style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-	<meta name="feel" content="this site">
-	<link rel="shortcut icon" href="https://developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png" type="image/x-icon">
-    <title>My test page</title>
-	<style>
-	h1 {
-        font-size: 50px;
-        line-height: 140px;
-        margin: 0 0 0 32.5px;
-		background-color: #3CBDF3;
-      }
-	  </style>
+
+    <title>My page title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
   </head>
+
   <body>
-  <h1><em>My first page</em></h1>
-  <h2>My first page</h2>
-    <img src="images/download.jpg" alt="My test image">
-	<p>At Mozilla, we’re a global <a href="https://www.mozilla.org" target="_blank" title="Goto Mozilla website" >Mozilla</a> community of</p>
-<br><br>
-	
-	<ul> 
-  <li>technologists</li>
-  <li>thinkers</li>
-	<ul>
-		<li>hackers</li>
-	</ul>
-  <li>builders</li>
-  <a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
-</ul>
+    <!-- Here is our main header that is used across all the pages of our website -->
 
-<table>
-  <colgroup>
-    <col style="background-color: blue">
-    <col style="background-color: yellow">
-  </colgroup>
-  <tr>
-    <th>Data 1</th>
-    <th>Data 2</th>
-  </tr>
-  <tr>
-    <td>Calcutta</td>
-    <td>Orange</td>
-  </tr>
-  <tr>
-    <td>Robots</td>
-    <td>Jazz</td>
-  </tr>
-</table>
+    <header>
+      <h1>Header</h1>
+    </header>
 
-<form action="/my-handling-form-page" method="post">
-  <div>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="user_name">
-  </div>
-  <div>
-    <label for="mail">E-mail:</label>
-    <input type="email" id="mail" name="user_mail">
-  </div>
-  <div>
-    <label for="msg">Message:</label>
-    <textarea id="msg" name="user_message"></textarea>
-  </div>
-</form>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
-<form>
-  <fieldset>
-    <legend>Fruit juice size</legend>
-    <p>
-      <input type="radio" name="size" id="size_1" value="small">
-      <label for="size_1">Small</label>
-    </p>
-    <p>
-      <input type="radio" name="size" id="size_2" value="medium">
-      <label for="size_2">Medium</label>
-    </p>
-    <p>
-      <input type="radio" name="size" id="size_3" value="large">
-      <label for="size_3">Large</label>
-    </p>
-  </fieldset>
-</form>
+       <!-- A Search form is another commmon non-linear way to navigate through a website. -->
 
+       <form>
+         <input type="search" name="q" placeholder="Search query">
+         <input type="submit" value="Go!">
+       </form>
+     </nav>
 
+    <!-- Here is our page's main content -->
+    <main>
 
-<p><a href="New Folder/new.html#zero" target="_blank">new site</a></p>
+      <!-- It contains an article -->
+      <article>
+        <h2>Article heading</h2>
 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
-<input type="text" disabled="disabled">
-	<button title="Click Me">Change user</button>
-	<script src="scripts/main.js"></script>
+        <h3>Subsection</h3>
+
+        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+
+        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+
+        <h3>Another subsection</h3>
+
+        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+
+        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+      </article>
+
+      <!-- the aside content can also be nested within the main content -->
+      <aside>
+        <h2>Related</h2>
+
+        <ul>
+          <li><a href="#">Oh I do like to be beside the seaside</a></li>
+          <li><a href="#">Oh I do like to be beside the sea</a></li>
+          <li><a href="#">Although in the North of England</a></li>
+          <li><a href="#">It never stops raining</a></li>
+          <li><a href="#">Oh well...</a></li>
+        </ul>
+      </aside>
+
+    </main>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+
+    <footer>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+
   </body>
-</html> 
+</html>
